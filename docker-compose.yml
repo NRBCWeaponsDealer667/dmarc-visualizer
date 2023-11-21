@@ -11,7 +11,7 @@ services:
     restart: unless-stopped
 
   elasticsearch:
-    image: ./elasticsearch/
+    build: ./elasticsearch/
     environment:
       - discovery.type=single-node
     volumes:
