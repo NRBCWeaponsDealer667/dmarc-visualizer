@@ -15,7 +15,7 @@ services:
     environment:
       - discovery.type=single-node
     volumes:
-      - ./elastic_data:/home/smol/DMARC/dmarc-visualizer/data
+      - ./elastic_data:/home/smol/dmarc-visualizer/data
 
   grafana:
     build: ./grafana/
